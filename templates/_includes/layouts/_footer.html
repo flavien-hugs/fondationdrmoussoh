@@ -1,0 +1,78 @@
+{% load static %}
+
+
+<hr>
+<footer class="container-fluid mb-0">
+    <div class="row">
+        <div class="col-6 col-md col-sm">
+            <div class="">
+                <a class="font-weight-bold" href="{% url 'index' %} title="fondationdrmoussoh.org" ">fondationdrmoussoh.org
+                </a>
+                <p>Copyright &copy; <script> document.write(new Date().getFullYear());</script></p>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://web.facebook.com/Ambassadeursdelapaix/" title="facebook"  target="_blank" class="social-icon text-xs-center">
+                            <i class="fa fa-facebook-official fa-lg fa-fw social" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank" title="twitter" class="social-icon text-xs-center">
+                            <i class="fa fa-twitter fa-lg fa-fw social" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank" title="linkedin" class="social-icon text-xs-center">
+                            <i class="fa fa-linkedin fa-lg fa-fw social" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank" title="youtube" class="social-icon text-xs-center">
+                            <i class="fa fa-youtube-play fa-lg fa-fw social"></i>
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-6 col-md col-sm">
+            <h6><a title="Qui sommes-nous" class="font-weight-bold text-uppercase" href="{% url 'about_us' %}">Qui sommes-nous</a></h6>
+            <ul class="list-unstyled text-small">
+                <li><a title="Conseil d'administration" class="text-muted" href="#">Conseil d'administration</a></li>
+                <li><a title="Comment &ecicr;tre Membre" class="text-muted" href="#">Comment &ecirc;tre Membre</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md col-sm">
+            <h6><a title="Ce que nous faisons" class="font-weight-bold text-uppercase" href="#">Ce que nous faisons</a></h6>
+            <ul class="list-unstyled text-small">
+                <li><a title="Actions et rapports" class="text-muted" href="#">Actions et rapports</a></li>
+                <li><a title="O&ugrave; nous travaillons" class="text-muted" href="#">O&ugrave; nous travaillons</a></li>
+                <li><a title="Organes associ&eacute;s" class="text-muted" href="#">Organes associ&eacute;s</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md col-sm">
+            <h6><a title="&agrave; propos" class="font-weight-bold text-uppercase" href="">&agrave; propos</a></h6>
+            <ul class="list-unstyled text-small">
+                <li><a title="L'&eacute;quipe" class="text-muted" href="{% url 'team' %}">L'&eacute;quipe</a></li>
+                <li><a title="Si&egrave;ge social" class="text-muted" href="#">Si&egrave;ge social</a></li>
+                <li><a title="Soutenir la Fondation" class="text-muted" href="#">Soutenir la Fondation</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md col-sm">
+            <a class="font-weight-bold btn btn-md btn-block btn-success-" href="#" role="button">Nous rejoindre</a>
+            
+            <div class="d-inline">
+               <small> <a class="text-muted d-inline" href="#">Informations l&eacute;gales</a> | </small>
+            </div>
+
+            <div class="d-inline">
+               <small> <a class="text-muted d-inline" href="#">Nous contacter</a></small>
+            </div>
+        </div>
+    </div>
+</footer>

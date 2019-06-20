@@ -1,0 +1,29 @@
+{% extends "pages/pages.html" %}
+{% load static %}
+{% block title %}Qui sommes-nous ?{% endblock title %}
+
+<!--################################################### -->
+{% block main_slider %}
+  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="{% static "drmoussoh/img/slide1.jpg" %}" alt="First slide">
+            </div>
+        </div>
+        <div class="jumbotron text-center shadow-sm">
+            <div class="container">
+                <h1 class="jumbotron-headind font-weight-bold text-primary ">
+                    Ce que nous faisons
+                </h1>
+                <p class="lead"> &OElig;uvrer pour l’av&egrave;nement de Soci&eacute;t&eacute;s Pacifiques et Ouvertes aux fins du D&eacute;veloppement Durable.</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock main_slider %}
+
+
+{% block content %}
+    {% include "./_about-us-content.html" %}
+{% endblock content %}

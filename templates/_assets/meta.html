@@ -1,0 +1,22 @@
+{% load static %}
+
+{% block head_favicon %}
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+{% endblock head_favicon %}
+{% block head_meta %}
+    {% block head_meta_charset %}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    {% endblock head_meta_charset %}
+    {% block head_meta_viewport %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% endblock head_meta_viewport %}
+    {% block head_meta_name %}
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    {% endblock head_meta_name %}
+    {% block head_meta_contentlanguage %}
+        <meta http-equiv="Content-Language" value="fr-FR">
+    {% endblock head_meta_contentlanguage %}
+{% endblock head_meta %}

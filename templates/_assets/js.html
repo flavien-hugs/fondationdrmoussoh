@@ -1,0 +1,27 @@
+{% load static %}
+
+{% block footer_javascript_site %}
+
+    <script src="{% static "drmoussoh/boo/js/jquery-slim.min.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{% static "drmoussoh/boo/js/bootstrap.bundle.min.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{% static "drmoussoh/boo/js/holder.min.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{% static "drmoussoh/boo/js/popper.min.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="{% static "drmoussoh/boo/js/menu-dropdown-animation.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+
+    <script src="https://unpkg.com/ue-scroll-js"></script>
+    <script>
+        UeScroll.init({
+            element: '#ue-scroll',
+            scrollSpeeds: 10
+        });
+    </script>
+
+     <script src="{% static "drmoussoh/boo/js/ekko-lightbox.js" %}" type="text/javascript" charset="utf-8" async defer></script>
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function(event){
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+{% endblock footer_javascript_site %}

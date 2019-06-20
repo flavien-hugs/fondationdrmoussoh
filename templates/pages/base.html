@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>{% block title %}Fondation Dr Moussoh{% endblock title %}</title>
+        {% include "_assets/meta.html" %}
+        {% block head_css %}
+            {% include "_assets/css.html" %}
+        {% endblock head_css %}
+
+        {% block custom_css %}{% endblock custom_css %}
+
+		<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+		<![endif]-->
+    </head>
+
+    <body>
+        {% comment %}page d'en tête de la page{% endcomment %}
+        {% include "_includes/navbar/_nav.html" %}
+
+        {% comment %}page d'en tête de la page{% endcomment %}
+        {% block main_slider %}
+            {% include "_includes/navbar/_caroussel.html" %}
+        {% endblock main_slider %}
+
+
+        {% comment %}corps de la page{% endcomment %}
+        {% block content %}
+            {% include "./base/base_content.html" %}
+        {% endblock content %}
+
+
+        {% comment %}pieds de pages{% endcomment %}
+        {% block footer %}
+            {% include "_includes/layouts/_footer.html" %}
+        {% endblock footer %}
+
+        
+        <div id="ue-scroll" class="ue-scroll btn-white arrow-black circle shadow"></div>
+       
+    </body>
+
+    {# ensemble de bloc pour utiliser les fichiers JavaScript #}
+	{% block footer_javascript %}
+		{% include "_assets/js.html" %}
+	{% endblock footer_javascript %}
+</html>

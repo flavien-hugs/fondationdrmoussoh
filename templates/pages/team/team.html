@@ -1,0 +1,411 @@
+{% extends "pages/pages.html" %}
+{% load static %}
+{% block custom_css %}
+    <link rel="stylesheet" type="text/css" href="{% static "drmoussoh/boo/css/card-flip.css" %}">
+{% endblock custom_css %}
+
+{% block title %}L'&eacute;quipe{% endblock title %}
+
+<!--################################################### -->
+
+{% block main_slider %}
+    <section role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="{% static "drmoussoh/img/slide1.jpg" %}" alt="First slide">
+                </div>
+            </div>
+
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-headind font-weight-bold">Membres d'Administration de la Fondation</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur veniam ad, pariatur voluptatum et ut porro placeat iste ea! Dolor ut, facere atque odit commodi! Officia provident, eveniet fugiat dolor? Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock main_slider %}
+
+{% block content %}
+     <div id="team" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" outouchstart="this.classList.toggle('hover')">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="img-fluid"></p>
+                                        <h4 class="card-title">Member name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis at consectetur tenetur ut obcaecati tempore</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Member Name</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo consectetur saepe quod architecto natus sequi illo, assumenda, modi facilis suscipit numquam ab harum veniam nesciunt, praesentium vitae dolores? Beatae.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#" target="_blank" class="social-icon text-xs-center">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./team member -->
+            </div>
+        </div>
+    </div>
+
+    <section class="jumbotron text-center my-3">
+        <p class="lead text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo perferendis, dolor quos error a repellendus perspiciatis adipisci! Nemo voluptates reprehenderit consequuntur reiciendis delectus officia minus doloremque ab sint rem.
+        </p>
+    </section>
+
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false" aria-controls="collapseProfile">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-1">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-1" role="button" aria-expanded="false" aria-controls="collapseProfile-1">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-2">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-2" role="button" aria-expanded="false" aria-controls="collapseProfile-2">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-3">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-3" role="button" aria-expanded="false" aria-controls="collapseProfile-3">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-4">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-4" role="button" aria-expanded="false" aria-controls="collapseProfile-4">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-5">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-5" role="button" aria-expanded="false" aria-controls="collapseProfile-5">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-6">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-6" role="button" aria-expanded="false" aria-controls="collapseProfile-6">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-7">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-7" role="button" aria-expanded="false" aria-controls="collapseProfile-7">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-body">
+                    <img src="{% static "drmoussoh/img/profile.jpg" %}" alt="" class="rounded-circle img-fluid mb-2">
+                    <div class="text-center">
+                        <h4 class="card-title font-weight-bold">Commodo ad fugiat esse.</h4>
+                        <p class="card-text">Laborum nulla ad tempor commodo laboris laborum adipisicing reprehenderit amet sint.</p>
+                        <p class="collapse" id="collapseProfile-9">description du membre et du poste occupé Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sunt quisquam, voluptate error maiores, possimus nesciunt repudiandae officia, deleniti ad ducimus nostrum dicta reprehenderit earum praesentium nemo sapiente dignissimos consequatur.</p>
+                        <a class=" btn btn-outline-info btn-block btn-sm" data-toggle="collapse" href="#collapseProfile-9" role="button" aria-expanded="false" aria-controls="collapseProfile-9">
+                            Voir le profil
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="container">
+        <div class="row">
+            {% include "_includes/layouts/_more_news.html" %}
+        </div>
+    </div>
+{% endblock content %}

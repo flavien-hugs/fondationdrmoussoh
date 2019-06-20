@@ -1,0 +1,85 @@
+{% load static %}
+
+
+<div class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <a href="{% url 'index' %}" class="navbar-brand text-primary font-weight-bold">Fondation Dr.Moussoh</a>
+    <div class="collapse navbar-collapse justify-content-end">
+        <form class="form-inline my-2 my-lg-0 ">
+            <div class="input-group">
+                <input id="search" class="form-control rounded mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+                <button class="btn btn-md btn-primary my-2 my-sm-0 ">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark navbar-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav text-uppercase font-weight-bold">
+            <li class="nav-item">
+                <a href="{% url 'index' %}" class="nav-link">accueil</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">pr&eacute;sentation</a>
+
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <a href="{% url 'about_us' %}" class="nav-link text-dark">la fondation</a>
+                            </div> <!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+                                <a href="{% url 'about_ceo' %}" class="nav-link text-dark">le pr&eacute;sident</a>
+                            </div><!-- /.col-md-4 -->
+
+                            <div class="col-md-4">
+                                <a href="{% url 'team' %}" class="nav-link text-dark">l'&eacute;quipe</a>
+                            </div><!-- /.col-md-4 -->
+                        </div>
+                    </div> <!-- /.container -->
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">nos activit&eacute;s</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'formation' %}" class="nav-link">formations</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" role="button" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">bibliothèque</a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-white">
+                                <a href="{% url 'bibliotheque' %}" class="nav-link text-dark">livres th&eacute;matiques</a>
+                            </div> <!-- /.col-md-6 -->
+
+                            <div class="col-md-6">
+                                <a href="#" class="nav-link text-dark">rapports</a>
+                            </div>
+                            <!-- /.col-md-6 -->
+                        </div>
+                    </div><!-- /.container -->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'gallerie' %}" class="nav-link">galleries</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+

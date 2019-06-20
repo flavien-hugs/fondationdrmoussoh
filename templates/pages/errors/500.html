@@ -1,0 +1,26 @@
+{% extends "pages/pages.html" %}
+{% load static %}
+{% block custom_css %}
+    <!--css error page -->
+    <link rel="stylesheet" type="text/css" href="{% static "drmoussoh/boo/css/error404.css" %}">
+{% endblock custom_css %}
+{% block title %}erreur 500{% endblock title %}
+
+<!--################################################### -->
+
+{% block main_slider %}{% endblock main_slider %}
+
+{% block content %}
+    <div class="container">
+        <div id="notfound">
+            <div class="notfound">
+                <div class="notfound-404">
+                    <h4>Oops!</h4>
+                </div>
+                <h3>The Page can't be found</h3>
+                <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+                <a href="{% url 'index' %}" class="btn btn-md btn-outline-light">Go To Homepage</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

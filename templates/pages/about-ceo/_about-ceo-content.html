@@ -1,0 +1,56 @@
+{% load static %}
+
+<section class="jumbotron text-center mb-3">
+    <div class="container">
+        <h2 class="text-yellow text-center font-weight-bold text-uppercase">ceo fondation dr moussoh</h2>
+    </div>
+</section>
+
+<div class="container my-auto">
+    <div class="row">
+        <div class="col-md col-sm p-2">
+            <h4 class="display-5 col-md col-sm font-weight-bold">Qui est Dr Moussoh ?</h4>
+            <span class="h1-heading display-1 mr-1 float-left text-uppercase font-weight-bold text-muted">N</span>
+            <p class="lead text-justify pt-3">
+                atif de Bouaké et originaire d’Agboville en Côte d’Ivoire,
+                <img title="Docteur Moussoh Ambroise ceo de la Fondation Dr Moussoh pour le Développement et la Paix" class="sr-only-focusable img-fluid float-right ml-4" src="{% static "drmoussoh/img/drmoussoh.jpg" %}" alt=""> le jeune <strong class="font-weight-bold">MOUSSOH Ambroise</strong>, après de brillantes études primaires et secondaires sanctionnées par l’obtention du Baccalauréat au Lycée Catholique St Viateur de Bouaké. Animé par le désir ardent d’aider et d’assister
+                les personnes en difficulté, le jeune étudiant de l’INP-HP de Yamoussoukro dépose ses valises à la Faculté de Pharmacie de l’Université de Abidjan Cocody, où quelques années il obtient son Doctorat en Sciences Pharmaceutiques et Biologiques avec la Mention Très Honorable.
+            </p>
+            <p class="lead text-justify pt-0">
+                Désormais Docteur, l’amour du jeune Pharmacien pour Bouaké et ses populations, le pousse à revenir s’installer dans le mythique quartier KOKO où quelques années plus tard, il devint le propriétaire de l’Officine qui porte le nom de la commune qui l’a vu grandir : la « Pharmacie koko » à Bouaké.
+            </p>
+            <p class="lead text-justify pt-0">
+                Le Responsable Commercial du Laboratoire International Pharmaceutique « Pierre Fabre »,
+                le Président de l’Union des Pharmaciens Privés de Côte d’Ivoire (UNPPCI) (section Bouaké), des Régions de Gbêkê, Iffou et Hambol va mettre ses nombreuses années d’expériences acquises au Rotary Club, à la disposition des populations de Bouaké. Ainsi Dr MOUSSOH va initier et financer plusieurs activités sociales (Journée de l’Excellence, Arbres de Noël, Tournoi de Football...) en faveur de certaines couches sociales de Koko.
+            </p>
+            <p class="lead text-justify pt-0">
+                Cependant avec les différentes crises qu’a connu notre pays, demandes et sollicitudes des
+                populations, de Bouaké et d’ailleurs, se faisant de plus en plus nombreuses et pressantes, Dr MOUSSOH Ambroise a jugé bon qu’il faille mieux structurer les activités en les formalisant afin de faire bénéficier le maximum de personnes.
+            </p>
+            <p class="lead text-justify pt-0">
+                Par ailleurs, partant du constat que Bouaké constitue une sorte de synthèse des peuplements de la Côte d’Ivoire et l’exemple même d’une intégration nationale et internationale des plus réussies, pour le Docteur, il est bon que nous préservions ces acquis en faisant de la <strong class="font-weight-bold">Cohésion Sociale et de l’Intégration des Peuples</strong> une réalité agissante, et mieux, un sacerdoce. Ainsi depuis le 27 novembre 2015 le rêve du jeune cadre de l’Agnéby Tiassa et de Gbêkê s’est vu
+                réalisé par la création d’une Organisation Non Gouvernementale dénommée « ONG Actions
+                Sociales pour la Paix ».
+            </p>
+            <p class="lead text-justify pt-0">
+                Après quatre années d’intenses activités sur le terrain, les Fondateurs de l’ONG ont bien voulu la muer en Fondation afin d’atteindre une cible plus
+                large. Marié et père de trois enfants, <strong class="font-weight-bold">Dr MOUSSOH Ambroise</strong>, nouvellement élu Conseiller Municipal Chargé des Affaires Sociales et Culturelles à la Mairie de Bouaké, est depuis le 05 mars 2019, le Président Fondateur de la <a class="tooltip-bottom font-weight-bold" aria-hidden=true  href="{% url "index" %}" title="Fondation Dr Moussoh pour le Développement et la Paix">« Fondation Dr Moussoh pour le Développement et la Paix. »</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron-fluid my-auto text-center">
+    <p><a href="{% url 'about_us' %}" class="btn btn-lg btn-primary mt-2 font-weight-bold">En savoir plus sur la Fondation</a></p>
+</div>
+
+<section class="jumbotron text-center my-3">
+    <p class="lead text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo perferendis, dolor quos error a repellendus perspiciatis adipisci! Nemo voluptates reprehenderit consequuntur reiciendis delectus officia minus doloremque ab sint rem.
+    </p>
+</section>
+
+<div class="container">
+    {# include more news #}
+    {% include "_includes/layouts/_more_news.html" %}
+</div>
